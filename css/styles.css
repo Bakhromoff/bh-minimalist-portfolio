@@ -156,6 +156,27 @@ img {
   margin-left: auto;
 }
 
+.secondary-button {
+  cursor: pointer;
+  white-space: nowrap;
+  padding: 17px 35px 17px 32px;
+  border: 1px solid #33323d;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #33323d;
+  text-decoration: none;
+  background-color: #fff;
+  transition: color 0.4s ease, background-color 0.4s ease, border-color 0.4s ease, opacity 0.4s ease;
+}
+.secondary-button:hover {
+  background-color: #33323d;
+  color: #fff;
+  border-color: #33323d;
+}
+
 /* HEADER */
 
 .site-header {
@@ -234,7 +255,7 @@ img {
   align-items: flex-start;
   background-color: #fff;
 }
-.hero__text {
+.hero__heading {
   font-family: "Ibarra Real Nova", "Arial", sans-serif;
   font-weight: 700;
   font-size: 50px;
@@ -245,9 +266,50 @@ img {
   margin-bottom: 53px;
 }
 
-
 /* MAIN CONTENT */
 
 .main-section {
   flex-grow: 1;
+}
+/* BIOGRAPHY */
+
+.biography {
+  padding-top: 70px;
+  padding-bottom: 75px;
+}
+
+.biography__container {
+  padding-right: 115px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.biography__img {
+  margin-right: 20px;
+}
+.biography__content {
+  width: 100%;
+  max-width: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-top: 50px;
+  padding-bottom: 46px;
+  border-top: 1px solid rgba(51, 50, 61, 0.15);
+  border-bottom: 1px solid rgba(51, 50, 61, 0.15);
+}
+.biography__title {
+  font-family: "Ibarra Real Nova", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 42px;
+  letter-spacing: -0.36px;
+  color: #33323d;
+  margin-top: 0;
+  margin-bottom: 28px;
+}
+.biography__text {
+  font-size: 16px;
+  margin-top: 0;
+  margin-bottom: 24px;
 }
