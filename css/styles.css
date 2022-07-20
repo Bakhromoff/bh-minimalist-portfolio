@@ -3,7 +3,7 @@
 @font-face {
   font-family: "Ibarra Real Nova";
   src: url("../fonts/IbarraRealNova-Bold.woff2") format("woff2"),
-      url("../fonts/IbarraRealNova-Bold.woff") format("woff");
+  url("../fonts/IbarraRealNova-Bold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
@@ -12,7 +12,7 @@
 @font-face {
   font-family: "Public Sans";
   src: url("../fonts/PublicSans-Thin.woff2") format("woff2"),
-      url("../fonts/PublicSans-Thin.woff") format("woff");
+  url("../fonts/PublicSans-Thin.woff") format("woff");
   font-weight: 100;
   font-style: normal;
   font-display: swap;
@@ -21,7 +21,7 @@
 @font-face {
   font-family: "Public Sans";
   src: url("../fonts/PublicSans-BoldItalic.woff2") format("woff2"),
-      url("../fonts/PublicSans-BoldItalic.woff") format("woff");
+  url("../fonts/PublicSans-BoldItalic.woff") format("woff");
   font-weight: bold;
   font-style: italic;
   font-display: swap;
@@ -30,7 +30,7 @@
 @font-face {
   font-family: "Public Sans";
   src: url("../fonts/PublicSans-Bold.woff2") format("woff2"),
-      url("../fonts/PublicSans-Bold.woff") format("woff");
+  url("../fonts/PublicSans-Bold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
@@ -39,7 +39,7 @@
 @font-face {
   font-family: "Public Sans";
   src: url("../fonts/PublicSans-Regular.woff2") format("woff2"),
-      url("../fonts/PublicSans-Regular.woff") format("woff");
+  url("../fonts/PublicSans-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -48,7 +48,7 @@
 @font-face {
   font-family: "Ibarra Real Nova";
   src: url("../fonts/IbarraRealNova-Regular.woff2") format("woff2"),
-      url("../fonts/IbarraRealNova-Regular.woff") format("woff");
+  url("../fonts/IbarraRealNova-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -118,23 +118,134 @@ img {
 /* BUTTON */
 
 .button {
+  width: 1005px;
+  max-width: 200px;
   cursor: pointer;
   white-space: nowrap;
-  display: inline-block;
   text-decoration: none;
   text-align: center;
-  border: 0;
-  color: ;
-  border-radius: 28px;
-  background-color: ;
-  transition: ;
+  display: flex;
+  align-items: center;
+  background-color: #203a4c;
+  transition: opacity 0.4s ease;
 }
 .button:hover {
-
+  opacity: 0.8;
 }
 .button:active {
-
+  opacity: 0.6;
 }
+.button__icon-wrapper {
+  padding: 10px 16px;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.button__icon {
+  width: 16px;
+  height: 12px;
+}
+.button__text {
+  padding-top: 17px;
+  padding-bottom: 17px;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #fff;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* HEADER */
+
+.site-header {
+  padding-top: 64px;
+  padding-bottom: 45px;
+}
+
+.site-header__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo {
+  display: flex;
+}
+.logo:hover {
+  opacity: 0.8;
+}
+.logo:active {
+  opacity: 0.6;
+}
+.site-header__logo {
+  margin-right: auto;
+}
+.logo__img {
+  width: 60px;
+  height: 32px;
+}
+
+.site-header__nav {
+  margin-left: 20px;
+}
+.sitenav__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+.sitenav__item:not(:last-child) {
+  margin-right: 42px;
+}
+.sitenav__link {
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 2px;
+  color: #33323d;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: color 0.4s ease, opacity 0.4s ease;
+}
+.sitenav__link:hover {
+  color: #5fb4a2;
+}
+.sitenav__link:active {
+  opacity: 0.6;
+}
+
+/* HERO */
+.hero {
+  padding-bottom: 75px;
+}
+
+.hero__container {
+  padding-top: 247px;
+  background-image: url(../img/hero-img.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.hero__content {
+  padding-top: 56px;
+  width: 100%;
+  max-width: 445px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: #fff;
+}
+.hero__text {
+  font-family: "Ibarra Real Nova", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 52px;
+  letter-spacing: -0.446429px;
+  color: #33323D;
+  margin-top: 0;
+  margin-bottom: 53px;
+}
+
+
 /* MAIN CONTENT */
 
 .main-section {
