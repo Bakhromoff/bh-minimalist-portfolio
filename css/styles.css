@@ -159,7 +159,7 @@ img {
 .secondary-button {
   cursor: pointer;
   white-space: nowrap;
-  padding: 17px 35px 17px 32px;
+  padding: 17px 35px 17px 30px;
   border: 1px solid #33323d;
   font-weight: 400;
   font-size: 12px;
@@ -312,4 +312,55 @@ img {
   font-size: 16px;
   margin-top: 0;
   margin-bottom: 24px;
+}
+
+/* CTA */
+
+.cta {
+  padding-top: 75px;
+  padding-bottom: 150px;
+}
+
+.cta__container {
+  display: flex;
+  align-items: center;
+}
+.cta__heading {
+  margin: 0;
+  width: 100%;
+  max-width: 350px;
+  font-family: "Ibarra Real Nova", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 42px;
+  letter-spacing: -0.36px;
+  color: #33323d;
+  margin-right: 32px;
+}
+.hr {
+  width: 100%;
+  max-width: 534px;
+  height: 1px;
+  background-color: rgba(51, 50, 61, 0.15);
+  margin-right: 32px;
+}
+
+
+
+
+
+
+/* MEDIA */
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) {
+
+  .hero__container {
+    background-image: url(../img/heero-img@2x.jpg);
+  }
 }
